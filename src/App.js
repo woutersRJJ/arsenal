@@ -10,11 +10,13 @@ function App() {
         {name: 'Paul Merson', born: '1968', position: 'Attacking midfielder', caps: 200, seasons: '1985-1997', clubs:'Middlesborough\nPortsmouth\nHanworth Villa'},
         {name: 'Ian Wright', born: '1963', position: 'Forward', caps: 225, seasons: '1991-1998', clubs:'Crystal Palace\nBurnley\nNottingham Forest'},
         {name: 'Tony Adams', born: '1966', position: 'Center-back', caps: 504, seasons: '1983-2002', clubs:''},
-        {name: 'Liam Brady', born: '1956', position: 'Attacking midfielder', caps: 235, seasons: '1973-1980', clubs:'Juventus\nAscoli\nInter\nWest Ham United'}
+        {name: 'Liam Brady', born: '1956', position: 'Attacking midfielder', caps: 235, seasons: '1973-1980', clubs:'Juventus\nAscoli\nInter\nWest Ham United'},
+        {name: 'Nicolas Anelka', born: '1979', position: 'Forward', caps: 65, seasons: '1997-1999', clubs:'PSG\nReal Madrid\nLiverpool\nFenerbahce\nChelsea\nShangai Shenhua\nMumbai city'}
     ]);
     const [formData, setFormData] = useState({name: "", position: "", caps: "", seasons: "", clubs: ""});
 
     const handleChange = (e) => {
+
         setFormData({...formData, [e.target.name]: e.target.value});
     };
 
