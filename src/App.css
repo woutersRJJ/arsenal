@@ -107,4 +107,7 @@ button.cancel {
 textarea{
     resize:none;
     margin-left: 0;
+    font-size: initial;
+    font-family: Arial, serif;
+
 }
