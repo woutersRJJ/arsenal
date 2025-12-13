@@ -16,12 +16,24 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* font-family is geimporteerd in public/index.html */
 h1 {
     text-align: center;
-    color: #333;
+    color: red;
+    font-family: 'Alfa Slab One', serif;
 }
 
-input {
+/* Speciallekke met GUNNERS*/
+.scale {
+    animation: scale 1s infinite;
+}
+
+@keyframes scale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+input, textarea {
     padding: 10px;
     margin: 5px;
     border: 1px solid #ccc;
@@ -90,4 +102,9 @@ button.cancel {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px; /* spacing between cards */
     margin-top: 20px;
+}
+
+textarea{
+    resize:none;
+    margin-left: 0;
 }

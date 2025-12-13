@@ -22,6 +22,7 @@ function PlayerCard({ player, onUpdate, onDelete }) {
                     <input name="position" value={formData.position} onChange={handleChange} />
                     <input name="caps" value={formData.caps} onChange={handleChange} type="number" />
                     <input name="seasons" value={formData.seasons} onChange={handleChange}  />
+                    <textarea name="clubs" value={formData.clubs} onChange={handleChange} cols="40" rows="5" />
                     <div>
                         <button className="save" onClick={handleSave}>Save</button>
                         <button className="cancel" onClick={() => setIsEditing(false)}>Cancel</button>
@@ -34,6 +35,7 @@ function PlayerCard({ player, onUpdate, onDelete }) {
                     <p><strong>Position:</strong> {player.position}</p>
                     <p><strong>Caps:</strong> {player.caps}</p>
                     <p><strong>Seasons:</strong> {player.seasons}</p>
+                    <p><strong>Clubs:</strong> <textarea cols='20' rows='5' disabled>{player.clubs}</textarea></p>
                     <div>
                         <button className="edit" onClick={() => setIsEditing(true)}>Edit</button>
                         <button className="delete" onClick={onDelete}>Delete</button>
