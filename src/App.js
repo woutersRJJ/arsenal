@@ -38,9 +38,10 @@ function App() {
 
     return (
         <div className="container">
-            <img src={arsenal_logo} alt="logo van Arsenal" height={"283px"} width={"412px"} />
-            <h1 className='scale'>The Gunners</h1>
+            <img src={arsenal_logo} alt="logo van Arsenal" height={"312px"} width={"272px"} />
+            <h1>The Gunners</h1>
             <h2>Legends</h2>
+
             <input
                 name="name"
                 value={formData.name}

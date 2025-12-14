@@ -11,7 +11,7 @@ body {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background: #fff;
+    background: #DB0007;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -19,18 +19,12 @@ body {
 /* font-family is geimporteerd in public/index.html */
 h1 {
     text-align: center;
-    color: red;
+    color: #9C824A;
     font-family: 'Alfa Slab One', serif;
 }
 
-/* Speciallekke met GUNNERS*/
-.scale {
-    animation: scale 1s infinite;
-}
-
-@keyframes scale {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+h2{
+    color:#9C824A
 }
 
 input, textarea {
@@ -55,22 +49,22 @@ button:hover {
 }
 
 button.add {
-    background-color: #4caf50;
+    background-color: #063672;
     color: white;
 }
 
 button.edit {
-    background-color: #2196f3;
+    background-color:#063672;
     color: white;
 }
 
 button.delete {
-    background-color: #f44336;
+    background-color: #DB0007;
     color: white;
 }
 
 button.save {
-    background-color: #673ab7;
+    background-color: #063672;
     color: white;
 }
 
@@ -109,5 +103,12 @@ textarea{
     margin-left: 0;
     font-size: initial;
     font-family: Arial, serif;
-
 }
+
+img {
+    display: block;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
